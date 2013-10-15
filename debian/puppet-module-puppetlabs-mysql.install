@@ -1,0 +1,7 @@
+Modulefile usr/share/puppet/modules.available/puppetlabs-mysql
+metadata.json usr/share/puppet/modules.available/puppetlabs-mysql
+files usr/share/puppet/modules.available/puppetlabs-mysql
+templates usr/share/puppet/modules.available/puppetlabs-mysql
+tests usr/share/puppet/modules.available/puppetlabs-mysql
+manifests usr/share/puppet/modules.available/puppetlabs-mysql
+lib usr/share/puppet/modules.available/puppetlabs-mysql

@@ -1,0 +1,29 @@
+Source: puppet-module-puppetlabs-mysql
+Section: admin
+Priority: optional
+Maintainer: Puppet Package Maintainers <pkg-puppet-devel@lists.alioth.debian.org>
+Uploaders:
+ Stig Sandbeck Mathisen <ssm@debian.org>,
+ Thomas Bechtold <thomasbechtold@jpberlin.de>,
+Build-Depends: debhelper (>= 8)
+Standards-Version: 3.9.4
+Vcs-Git: git://git.debian.org/git/pkg-puppet/puppet-module-puppetlabs-mysql.git
+Vcs-Browser: http://git.debian.org/?p=pkg-puppet/puppet-module-puppetlabs-mysql.git;a=summary
+Homepage: https://forge.puppetlabs.com/puppetlabs/mysql
+
+Package: puppet-module-puppetlabs-mysql
+Section: admin
+Architecture: all
+Depends: ${misc:Depends},
+         puppet-common,
+         puppet-module-puppetlabs-stdlib,
+Description: Puppet module for mysql
+ Puppet lets you centrally manage every important aspect of your system
+ using a cross-platform specification language that manages all the
+ separate elements normally aggregated in different files, like users,
+ cron jobs, and hosts, along with obviously discrete elements like
+ packages, services, and files.
+ .
+ This module manages both the installation and configuration of mysql as well as
+ extends Pupppet to allow management of mysql resources, such as databases,
+ users and grants.

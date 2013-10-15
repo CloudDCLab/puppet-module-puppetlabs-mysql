@@ -1,0 +1,5 @@
+puppet-module-puppetlabs-mysql (2.0.0-1) UNRELEASED; urgency=low
+
+  * Initial release (Closes: #726376)
+
+ -- Thomas Bechtold <thomasbechtold@jpberlin.de>  Tue, 15 Oct 2013 06:07:19 -0000
