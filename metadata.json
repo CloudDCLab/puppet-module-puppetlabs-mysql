@@ -1,6 +1,6 @@
 {
   "name": "puppetlabs-mysql",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "summary": "Mysql module",
   "author": "Puppet Labs",
   "description": "Mysql module",
@@ -32,6 +32,28 @@
       ],
       "name": "database_grant",
       "doc": "Manage a database user\u0027s rights."
+    },
+    {
+      "properties": [
+        {
+          "name": "charset",
+          "doc": "The characterset to use for a database"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "name",
+          "doc": "The name of the database."
+        }
+      ],
+      "providers": [
+        {
+          "name": "mysql",
+          "doc": "Manages MySQL database."
+        }
+      ],
+      "name": "database",
+      "doc": "Manage databases."
     },
     {
       "properties": [
@@ -88,40 +110,6 @@
     {
       "properties": [
         {
-          "name": "privileges",
-          "doc": "Privileges for user"
-        },
-        {
-          "name": "table",
-          "doc": "Table to apply privileges to."
-        },
-        {
-          "name": "user",
-          "doc": "User to operate on."
-        },
-        {
-          "name": "options",
-          "doc": "Options to grant."
-        }
-      ],
-      "parameters": [
-        {
-          "name": "name",
-          "doc": "Name to describe the grant."
-        }
-      ],
-      "providers": [
-        {
-          "name": "mysql",
-          "doc": "Set grants for users in MySQL."
-        }
-      ],
-      "name": "mysql_grant",
-      "doc": "Manage a MySQL user\u0027s rights."
-    },
-    {
-      "properties": [
-        {
           "name": "password_hash",
           "doc": "The password hash of the user. Use mysql_password() for creating such a hash."
         },
@@ -160,28 +148,40 @@
     {
       "properties": [
         {
-          "name": "charset",
-          "doc": "The characterset to use for a database"
+          "name": "privileges",
+          "doc": "Privileges for user"
+        },
+        {
+          "name": "table",
+          "doc": "Table to apply privileges to."
+        },
+        {
+          "name": "user",
+          "doc": "User to operate on."
+        },
+        {
+          "name": "options",
+          "doc": "Options to grant."
         }
       ],
       "parameters": [
         {
           "name": "name",
-          "doc": "The name of the database."
+          "doc": "Name to describe the grant."
         }
       ],
       "providers": [
         {
           "name": "mysql",
-          "doc": "Manages MySQL database."
+          "doc": "Set grants for users in MySQL."
         }
       ],
-      "name": "database",
-      "doc": "Manage databases."
+      "name": "mysql_grant",
+      "doc": "Manage a MySQL user\u0027s rights."
     }
   ],
   "checksums": {
-    ".bundle/config": "7f1c988748783d2a8d455376eed1470c",
+    ".bundle/config": "b898efea5e8783d6593fcdabec67e925",
     ".fixtures.yml": "754de171830d3a00220cdc85bcb794a0",
     ".forge-release/pom.xml": "c650a84961ad88de03192e23b63b3549",
     ".forge-release/publish": "1c1d6dd64ef52246db485eb5459aa941",
@@ -189,11 +189,11 @@
     ".forge-release/validate": "7fffde8112f42a1ec986d49ba80ac219",
     ".nodeset.yml": "f2b857f9fc7a701ff118e28591c12925",
     ".travis.yml": "35fe54be03fbc47ce9b015b22240e683",
-    "CHANGELOG": "0460783631843c4defae0a6ee1be4157",
+    "CHANGELOG": "0b5a3135e4367f298a3051861332ee98",
     "Gemfile": "c0932f60de4a156b0c2c8ffcbc2fbbff",
-    "Gemfile.lock": "e22d828b2fe572b6af117f7110a6996b",
+    "Gemfile.lock": "f2a55b4706fb51e03397df6cefe7c28e",
     "LICENSE": "6089b6bd1f0d807edb8bdfd76da0b038",
-    "Modulefile": "8447156dc4c48aca0025626301900b7c",
+    "Modulefile": "503aa2fc184c841f2f0bf0c6c9f783f2",
     "README.md": "954cbd75a8c9355210d137494362e4f6",
     "Rakefile": "0428ea3759a4692c91604396c406a9c1",
     "TODO": "88ca4024a37992b46c34cb46e4ac39e6",
@@ -206,13 +206,13 @@
     "lib/puppet/provider/database_user/mysql.rb": "4da5e288bbfd99d4a3e06aa15b105a1a",
     "lib/puppet/provider/mysql.rb": "5b7aed54664c52d817a8283351bf34bd",
     "lib/puppet/provider/mysql_database/mysql.rb": "3778dfac523cd12ccfc63b5afe6cbc4f",
-    "lib/puppet/provider/mysql_grant/mysql.rb": "733e18b1608dfb34d5979490489379f2",
+    "lib/puppet/provider/mysql_grant/mysql.rb": "f27f8cc23f74ce59a49172d8e6a0d5dc",
     "lib/puppet/provider/mysql_user/mysql.rb": "c50e589eafb556c0e964e1fca3f29fd6",
     "lib/puppet/type/database.rb": "7b4b49b841d41541ce719d1a051ee94b",
     "lib/puppet/type/database_grant.rb": "66fce5df0f3f4111fe37f094965f6f93",
     "lib/puppet/type/database_user.rb": "f8a151a415fe10da92fb4bd5e473df54",
     "lib/puppet/type/mysql_database.rb": "e21a38611edc6cba5454889170bc0ebc",
-    "lib/puppet/type/mysql_grant.rb": "8fa1b62a414b90289c4b5c7169ef2eb0",
+    "lib/puppet/type/mysql_grant.rb": "f934aa58da207aa4571a1cca285295c2",
     "lib/puppet/type/mysql_user.rb": "ddb054a5fd03689ae4325fbe003a41d3",
     "manifests/backup.pp": "dfa324a48d47935a8423b102458c6516",
     "manifests/bindings.pp": "5976e9b74a29cc3a102f49867709a08f",
@@ -226,7 +226,7 @@
     "manifests/db.pp": "0dd59f8d1578c25a2517d4fda862624b",
     "manifests/init.pp": "52ad9ac01674695edaf62cc1c48ef4f8",
     "manifests/params.pp": "033b2e0f88f15b2d8aab3b08ed470abd",
-    "manifests/server.pp": "677357bc35bf07a2eeb9eb8ee87e874f",
+    "manifests/server.pp": "e7ddee90013fc90072367c9b95569a4e",
     "manifests/server/account_security.pp": "c793a434142ddaa6a529ed59739368fb",
     "manifests/server/backup.pp": "ff6239ff4e2c46f42ec9b34a805c6718",
     "manifests/server/config.pp": "dcc92deb6e2e100bf150016a8fb2a42d",
@@ -277,7 +277,7 @@
     "tests/perl.pp": "6e496f19eaae83c90ce8b93236d44bca",
     "tests/python.pp": "b093828acfed9c14e25ebdd60d90c282",
     "tests/ruby.pp": "6c5071fcaf731995c9b8e31e00eaffa0",
-    "tests/server.pp": "dc12e116371af9d102a7cb2d9d06da0d",
+    "tests/server.pp": "72e22552a95b9a5e4a349dbfc13639dc",
     "tests/server/account_security.pp": "47f79d7ae9eac2bf2134db27abf1db37",
     "tests/server/config.pp": "619b4220138a12c6cb5f10af9867d8a1"
   },
