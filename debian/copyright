@@ -6,6 +6,10 @@ Files: debian/*
 Copyright: 2013 Thomas Bechtold <thomasbechtold@jpberlin.de>
 License: Apache-2.0
 
+Files: files/mysqltuner.pl
+Copyright: 2006-2011 Major Hayden <major@mhtx.net>
+License: GPL-3+
+
 Files: *
 Copyright: 2013 Puppet Labs Inc <info@puppetlabs.com>
 License: Apache-2.0
@@ -26,4 +30,16 @@ License: Apache-2.0
  On Debian systems, the complete text of the Apache License 2.0 can
  be found in "/usr/share/common-licenses/Apache-2.0"
 
-
+License: GPL-3+
+ This program is free software: you can redistribute it and/or modify 
+ it under the terms of the GNU General Public License as published by 
+ the Free Software Foundation, either version 3 of the License, or 
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful, 
+ but WITHOUT ANY WARRANTY; without even the implied warranty of 
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+ GNU General Public License for more details.
+ .
+ On Debian systems, the complete text of the GPL-3 can be found in
+ "/usr/share/common-licenses/GPL-3"
