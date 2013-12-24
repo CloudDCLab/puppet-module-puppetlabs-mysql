@@ -1,9 +1,9 @@
-puppet-module-puppetlabs-mysql (2.1.0-1) UNRELEASED; urgency=medium
+puppet-module-puppetlabs-mysql (2.1.0-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control: Use Debian address in Uploaders field.
 
- -- Thomas Bechtold <toabctl@debian.org>  Tue, 24 Dec 2013 16:15:27 +0100
+ -- Thomas Bechtold <toabctl@debian.org>  Tue, 24 Dec 2013 16:20:35 +0100
 
 puppet-module-puppetlabs-mysql (2.0.1-1) unstable; urgency=low
 
