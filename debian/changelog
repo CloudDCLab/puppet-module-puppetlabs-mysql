@@ -1,3 +1,9 @@
+puppet-module-puppetlabs-mysql (2.3.1-1) UNRELEASED; urgency=medium
+
+  * Imported upstream relase 2.3.1
+
+ -- Stig Sandbeck Mathisen <ssm@debian.org>  Fri, 24 Oct 2014 21:17:43 +0200
+
 puppet-module-puppetlabs-mysql (2.2.3-1) unstable; urgency=medium
 
   * New upstream release.
