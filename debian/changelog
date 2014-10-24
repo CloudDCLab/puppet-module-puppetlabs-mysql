@@ -1,8 +1,11 @@
-puppet-module-puppetlabs-mysql (2.3.1-1) UNRELEASED; urgency=medium
+puppet-module-puppetlabs-mysql (2.3.1-1) unstable; urgency=medium
 
   * Imported upstream relase 2.3.1
+  * Declare compliance with Debian policy 3.9.6
+  * Update debian/control metadata with cme (Vcs-*)
+  * Update file lists
 
- -- Stig Sandbeck Mathisen <ssm@debian.org>  Fri, 24 Oct 2014 21:17:43 +0200
+ -- Stig Sandbeck Mathisen <ssm@debian.org>  Fri, 24 Oct 2014 22:12:13 +0200
 
 puppet-module-puppetlabs-mysql (2.2.3-1) unstable; urgency=medium
 
