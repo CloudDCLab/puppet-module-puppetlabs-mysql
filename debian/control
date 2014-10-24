@@ -5,7 +5,7 @@ Maintainer: Puppet Package Maintainers <pkg-puppet-devel@lists.alioth.debian.org
 Uploaders:
  Thomas Bechtold <toabctl@debian.org>,
 Build-Depends: debhelper (>= 8)
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/git/pkg-puppet/puppet-module-puppetlabs-mysql.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-puppet/puppet-module-puppetlabs-mysql.git;a=summary
 Homepage: https://forge.puppetlabs.com/puppetlabs/mysql
