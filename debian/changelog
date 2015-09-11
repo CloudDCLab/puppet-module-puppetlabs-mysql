@@ -1,5 +1,6 @@
 puppet-module-puppetlabs-mysql (3.6.0-1) unstable; urgency=medium
 
+  * Team upload.
   * Imported upstream release 3.6.0
   * [d6d4eb9] Add DEP-8 tests
   * [e31bdb0] Adjust installation dirs
