@@ -1,8 +1,9 @@
-puppet-module-puppetlabs-mysql (3.6.1-1) UNRELEASED; urgency=medium
+puppet-module-puppetlabs-mysql (3.6.1-1) unstable; urgency=medium
 
+  * Team upload.
   * Imported upstream release 3.6.1 (CVE-2015-7224)
 
- -- Stig Sandbeck Mathisen <ssm@debian.org>  Sun, 04 Oct 2015 09:28:21 +0200
+ -- Stig Sandbeck Mathisen <ssm@debian.org>  Sun, 04 Oct 2015 09:39:00 +0200
 
 puppet-module-puppetlabs-mysql (3.6.0-1) unstable; urgency=medium
 
